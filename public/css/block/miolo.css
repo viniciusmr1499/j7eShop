@@ -36,16 +36,12 @@
 
 #header a.nav-link:hover{
     transform:translateY(12px);
-    color:#3498db;
-}
-
-#header .navbar-brand:focus{
-    transform:scale3d(1.2,1.2,1);
+    color:#20B2AA;
 }
 
 #header .navbar-brand{
     /* color:transparent; */
-    background: url('../../img/logo.svg');
+    /* background: url(''); */
     background-repeat: no-repeat;
     background-size:contain;
     background-position:center;
