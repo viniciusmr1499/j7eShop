@@ -13,31 +13,30 @@
 </head>
 <body class="theme__login">
     <video loop autoplay=true>
-            <!-- aqui vai o video  -->
-        <source src="https://player.vimeo.com/external/314214609.sd.mp4?s=46ab080d29758f0fdf47f39f7eef6381a0217b4a&profile_id=164&oauth2_token_id=57447761" type="">
-    </video>
+        <!-- <source src="https://ak2.picdn.net/shutterstock/videos/33042442/preview/stock-footage-computer-screen-entering-login-and-password-with-showing-system-hacked-alert-system-security.webm"> -->
+        <source src="https://ak6.picdn.net/shutterstock/videos/24707126/preview/stock-footage-business-man-pointing-on-electronic-commerce-network-concept-tablet-pad.webm" type="">
+        </video>
 
     <form action="#" method="#" class="box">
-        <h1 class="box__title">Login</h1>
+        <h1 class="login__title">Login</h1> 
 
         <div class="txtb">
-            <span class="box__icon">
-                <i class="far fa-envelope"></i>
-            </span>
-            <input class="box__date" type="email" name="txtemail" id="txtemail" placeholder="Email">
+            <input type="email" name="" id="">
+            <span data-placeholder="Email"></span>
         </div>
 
         <div class="txtb">
-            <span class="box__icon">
-                <i class="fas fa-lock"></i>
-            </span>
-            <input class="box__date" type="password" name="txtsenha" id="txtsenha" placeholder="Senha">
+            <input type="password" name="" id="">
+            <span data-placeholder="Senha"></span>
         </div>
 
-        <button type="submit" class="box__button">Login</button>
+        <input type="button" value="Entrar" class="btn__customized">
 
-        <div class="text__box">
-            <a href="#">Esqueceu a senha?</a>
+        <div class="txt__bottom">
+            <p>Esqueceu a senha? <a href="#" class="text__link">Clique qui</a></p>
+            <p class="mt-2">
+                Já possui cadastro? <a class="text__link" href="#">Cadastra-se</a>
+            </p>
         </div>
     </form>
 
@@ -48,9 +47,14 @@
     <script src="../js/bootstrap.min.js"></script>
 
     <script>
-        $(function(){
-            
-        })
+       $('.txtb input').on('focus',function(){
+           $(this).addClass('focus')
+       })
+
+       $('.txtb input').on('blur',function(){
+        if( $(this).val() == "" ) 
+           $(this).removeClass('focus')
+       })
     </script>
     
 </body>
