@@ -3,9 +3,19 @@
     display: block;
     overflow: hidden;
 }
-video{
-    display: block;
-    width: 100%;
+header{
+    height: auto;
+    overflow: hidden;
+}
+
+.video{
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    right:0;
+    bottom:0;
+    width: auto;
 }
 
 .box{
@@ -79,6 +89,7 @@ video{
 .focus + span::after{
     width:100%;
 }
+
 .box .btn__customized:hover{
     background-position:right;
 }
@@ -100,17 +111,18 @@ video{
     text-align: justify;
     margin-top:40px;
 }
+
 .box  p{
     font-family:'Roboto Condensed', sans-serif;
     font-weight: bold;;
     font-size:13px;
     color:#aaa;
 }
+
 .box .text__link{
     font-size:12px;
     color:#fff;
     transition: .3s;
-    /* text-decoration: none; */
 }
 
 .box .text__link:hover{

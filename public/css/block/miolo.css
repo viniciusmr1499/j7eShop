@@ -105,7 +105,7 @@
     cursor: pointer;
 }
 #header .h__icon .fas:hover{
-    color:#8244ad;
+    color:#152038;
 }
 #header .h__icon .fas{
     transition:.25s;
@@ -131,8 +131,8 @@
     font-weight: 500;
     letter-spacing: 1px;
     font-family: 'Roboto Condensed', sans-serif;
-    background:linear-gradient(120deg, #3498db,#3498db,#8244ad,#8244ad);
-    background-size:200%
+    background:linear-gradient(120deg, #152038,#3498db,#152038);
+     background-size:200%
 }
 #header .h__list{
     display:flex;

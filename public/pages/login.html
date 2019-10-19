@@ -12,10 +12,11 @@
     <title>Login - E-commerce</title>
 </head>
 <body class="theme__login">
-    <video loop autoplay=true>
-        <!-- <source src="https://ak2.picdn.net/shutterstock/videos/33042442/preview/stock-footage-computer-screen-entering-login-and-password-with-showing-system-hacked-alert-system-security.webm"> -->
-        <source src="../img/video-login.webm" type="">
+    <header>
+        <video loop="true" autoplay="true" class="video"> 
+            <source src="../video/video-login.webm">
         </video>
+    </header>
 
     <form action="#" method="#" class="box">
         <h1 class="login__title">Login</h1> 
@@ -35,7 +36,7 @@
         <div class="txt__bottom">
             <p>Esqueceu a senha? <a href="#" class="text__link">Clique qui</a></p>
             <p class="mt-2">
-                Já possui cadastro? <a class="text__link" href="#">Cadastra-se</a>
+                Já possui cadastro? <a class="text__link" href="cadastro.html">Cadastra-se</a>
             </p>
         </div>
     </form>
@@ -45,17 +46,7 @@
     <script src="../js/jquery-3.4.1.min.js"></script>
     <script src="../js/popper.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-
-    <script>
-       $('.txtb input').on('focus',function(){
-           $(this).addClass('focus')
-       })
-
-       $('.txtb input').on('blur',function(){
-        if( $(this).val() == "" ) 
-           $(this).removeClass('focus')
-       })
-    </script>
+    <script src="../js/login-efect.js"></script>
     
 </body>
 </html>
