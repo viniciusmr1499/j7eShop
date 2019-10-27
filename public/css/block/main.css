@@ -1,0 +1,114 @@
+@keyframes slow{
+    0%{
+        background-position:left;
+    }
+    100%{
+        background-position:right;
+    }
+}
+
+#main{
+    position: relative;
+    width:100%;
+}
+
+#main #cards__j7 {
+    position:relative;
+    height:15rem;
+    transition:.2s;
+    background:linear-gradient(120deg,#3498db,#8244ad,#3498db);
+    background-size:200%;
+    animation-name: slow;
+    animation-delay: 1s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+#cards__j7 .block{
+    width:280px;
+    height:280px;
+    border:0.5px solid #ccc;
+    background:#fff;
+    border-radius:50%;
+    padding:1rem 0.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:absolute;
+    top:-7rem;
+    z-index:1;
+}
+
+#cards__j7  .block .img-product:hover{transform:scale(1.07);filter:grayscale(0);}
+#cards__j7 .block .img-product{
+    height:210px;
+    width:210px;
+    transition:.5s;
+    filter:grayscale(1);
+}
+
+#cards__j7 .describe__product{
+    position: absolute;
+    width:250px;
+    background:#fff;
+    z-index:2;
+    bottom:-12rem;
+    border-radius:50px;
+    padding:1rem;
+}
+
+#cards__j7 .describe__product .desc{
+    text-decoration:none;
+    position:absolute;
+    background:#3498db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:50px;
+    height: 50px;
+    border-radius:50%;
+    top:0;
+    left:0px;
+    padding:2.174rem;
+    color:#fff;
+    font-size:1.5rem;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#cards__j7  .describe__product .title__product{
+    text-align:center;
+    font-size:1.15rem;
+    letter-spacing: 1px;
+    padding-left:2.7rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#cards__j7  .describe__product .currency{
+    font-size:0.85rem;
+    padding-left:3.8rem;
+    line-height:20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color:#3498db;
+    font-weight: bold;
+}
+
+#cards__j7 .describe__product .estrelinhas{
+    position:absolute;
+    bottom:0;
+    right:0;
+    transform:translate(-50%,-100%);;
+}
+
+#cards__j7  .describe__product .estrelinhas i{
+    font-size:0.65rem;
+    line-height:17px;
+}
+
+#main #carousel__j7{
+    height:30rem;
+    
+}
+    

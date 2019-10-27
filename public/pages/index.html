@@ -16,62 +16,126 @@
         <nav class="navbar navbar-expand-lg navbar-light container-fluid">
             <a href="index.html" class="navbar-brand">j7 eShop</a>
             
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#menu" aria-controls="expanded">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#menu" aria-expanded="false" aria-controls="true">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Inicio</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-thumbs-up"></i> Sobre</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-shopping-cart"></i> Shop</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link"><i class="fas fa-user"></i> login</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-shopping-cart"></i> Carrinho</a></li>
                     <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-mobile-alt"></i> Contato</a></li>
+                    <div class="active"></div>
+                    <li class="nav-item">
+                        <input type="text" maxlength="30" name="search" id="search" class="h-search-sm h-search" placeholder="Pesquisar produtos">
+                        <button class="icon" type="button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </li>
                 </ul>
             </div>
-            
-            <ul class="h__list">
-                <li>
-                    <div class="header__search ml-auto">
-                        <input type="text" maxlength="30" class="h__search" placeholder="Procurar Produto">
-                        <button class="btn btn-primary" title="buscar">
-                            <i class="fas fa-shopping-cart"></i> CARRINHO
-                        </button>
-                        <span class="h__icon">
-                            <button type="submit" title="pesquisar">
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </span> 
-                    </div>
-                </li>
-
-                <li>
-                    <a href="cadastro.html">
-                        <div class="avatar__img" id="logar">
-                            <div class="overlay"></div>
-                        </div>
-                    </a>
-                   
-                </li>
-
-            </ul>
         </nav>
-        
     </header>
 
     <!-- aqui vai o conteudo main  -->
+    <main id="main">
+        <section id="cards__j7">
+            <div class="container-fluid">
+                <div class="row">
+                    
+                    <div class="col-md-4 col-sm-12 d-flex justify-content-center">
+                        <div class="block">
+                            <a href="produto.html" target="_blank">
+                                <img src="../img/produto3.png" alt="img" class="img-product">
+                            </a>
+                        </div>
+                    
+                        <div class="describe__product">
+                            <span class="desc">10%</span>
+                            <h2 class="title__product">Nome do produto</h2>
+                            <p class="currency">R$255,90</p>
+                            <div class="estrelinhas">
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="far fa-star"></i></span>
+                                <span><i class="far fa-star"></i></span>
+                            </div>
+                                    
+                        </div>
+    
+                    </div>
+        
+                    <div class="col-md-4 col-sm-12 d-flex justify-content-center">
+                        <div class="block">
+                            <a target="_blank" href="produto.html">
+                                <img src="../img/produto1.png" alt="img" class="img-product">
+                            </a>
+                        </div>
+                    
+                        <div class="describe__product">
+                            <span class="desc">50%</span>
+                            <h2 class="title__product">Nome do produto</h2>
+                            <p class="currency">R$1800,00</p>
+                            <div class="estrelinhas">
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                            </div>
+                                    
+                        </div>
+                    </div>
+        
+                    <div class="col-md-4 col-sm-12 d-flex justify-content-center">
+                        <div class="block">
+                            <a href="produto.html" target="_blank">
+                                <img src="../img/produto2.png" alt="img" class="img-product">
+                            </a>
+                        </div>
+                    
+                        <div class="describe__product">
+                            <span class="desc">
+                                <i class="fas fa-cart-plus"></i>
+                            </span>
+                            <h2 class="title__product">Nome do produto</h2>
+                            <p class="currency">R$500,00</p>
+                            <div class="estrelinhas">
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="far fa-star"></i></span>
+                            </div>
+                                    
+                        </div>
+                    </div>
+    
+                    <!-- fim da linha -->
+                </div>
+            </div>
+        </section>
+
+        <section id="carousel__j7">
+
+        </section>
 
 
-    <footer id="footer">
+    </main>
+
+    <!-- <footer id="footer">
         <div class="logo__bottom">
             <img src="..//img/logo-topo.svg" width="auto" height="70px" alt="Logo">
         </div>
         <p class="text__bottom is-active">&copy; Todos os direitos reservados</p>
-    </footer>
+    </footer> -->
 
     
 
     <script src="../js/jquery-3.4.1.min.js"></script>
-    <script src="../public/js/popper.js"></script>
-    <script src="../public/js/bootstrap.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
