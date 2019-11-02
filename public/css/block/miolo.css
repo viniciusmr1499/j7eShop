@@ -15,7 +15,7 @@
         transform:translateX(18.5rem);
     }
     #header .h-search:focus{
-        box-shadow:2px 10px 10px rgba(0,0,0,0.5); 
+        box-shadow:2px 5px 10px rgba(0,0,0,0.5); 
     }
 
     .active{
@@ -96,18 +96,25 @@
 /* MEDIAS QUERYS */
 
 #header{
-    position:relative;
-    background:linear-gradient(to left, rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url('../../img/slide1.jpg');
+    background:linear-gradient( to bottom, rgba(0,0,0,.2),rgba(0,0,0,.8)), url('../../img/capa-j7.png');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-position: top center ;
+    background-size:cover;
     background-attachment: fixed;
-    height:600px; 
+    height:550px; 
 }
 
 #header .nav-item{
     padding:0 5px;
 }
+
+.purple{
+    position: fixed;
+    z-index:3;
+    background:#563d7c;
+    transition:.6s;
+}
+
 #header a.nav-link{
     color:#fff;
     text-transform:uppercase;
@@ -120,7 +127,7 @@
 
 #header .navbar-brand{
     color:transparent;
-    background: url('../../img/logo-topo.svg');
+    background: url('../../img/logo-definitiva.png');
     background-repeat: no-repeat;
     background-size:70px;
     background-position:center;

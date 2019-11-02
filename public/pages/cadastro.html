@@ -5,83 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/dest/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/dest/reset.css">
-    <link rel="stylesheet" href="../css/dest/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="../css/dest/style.css">
     <link rel="stylesheet" href="../css/templates/cadastro.css">
     <title>Área de cadastro - E-commerce</title>
 </head>
-<body id="theme__register">
+<body id="theme-register">
     <header id="header">
-            <nav class="container navbar navbar-expand-lg navbar-light container-fluid">
-                <a href="index.html" class="navbar-brand">j7 eShop</a>
-                <ul class="nav-nav ml-auto">
+        <nav class="navbar navbar-expand-lg navbar-light container-fluid">
+            <a href="index.html" class="navbar-brand">j7 eShop</a>
+            
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#menu" aria-expanded="false" aria-controls="true">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link"><i class="fas fa-user"></i> login</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-shopping-cart"></i> Carrinho</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-mobile-alt"></i> Contato</a></li>
+                    <div class="active"></div>
                     <li class="nav-item">
-                        <a href="login.html" class="ancora">Entrar</a>
+                        <input type="text" maxlength="30" name="search" id="search" class="h-search-sm h-search" placeholder="Pesquisar produtos">
+                        <button class="icon" type="button">
+                            <i class="fas fa-search"></i>
+                        </button>
                     </li>
                 </ul>
-            </nav>
-                    
+            </div>
+        </nav>
     </header>
 
-    <section id="section" class="container">
-            <div class="title__register">
-                <h1>Complete os seus dados</h1>
-            </div>
+    <section id="register" class="container">
+        <div class="r-field">
+            <h1>Complete os seus dados</h1>
+        </div>
 
-        <form action="#" method="#" id="registro">
+        <form action="#" method="#" id="r-form">
 
             <div class="row">
                 <div class="col-md-6">
-                    <div class="field__register">
+                    <div class="r-info">
                         <input type="text" name="" id="">
                         <span data-placeholder="Nome"></span>
                     </div>
                 </div>
 
                 <div class="col-md-6">
-                    <div class="field__register">
+                    <div class="r-info">
                         <input type="text" name="" id="">
                         <span data-placeholder="Sobrenome"></span>
                     </div>
                 </div>
-            </div>
 
-            
-            
-            <div class="row">
                 <div class="col-md-6">
-                    <div class="field__register">
-                            <input type="email" name="" id="">
-                            <span data-placeholder="E-mail"></span>
+                    <div class="r-info">
+                        <input type="email" name="" id="">
+                        <span data-placeholder="E-mail"></span>
                     </div>
                 </div>
                 
                 <div class="col-md-6">
-                    <div class="field__register">
+                    <div class="r-info">
                         <input type="password" name="" id="">
                         <span data-placeholder="Senha"></span>
                     </div>
                 </div>
+                <!-- fim da linha  -->
             </div>
         </form>
-        <div class="termo-resposabilidade"> 
+
+        <div class="statement"> 
             <button class="btn btn-efect">Criar conta</button>
            
             <div class="col-md-6">
-                <p class="termo__text">
+                <p class="term__text">
                     Ver o <a href="#">
                         contrato 
                     </a>
                     do J7 e-shop
                 </p>
-                <p class="termo__text">
+                <p class="term__text">
                     Ao cadastrar-me, declaro que sou maior de idade e aceito as
                     <a href="#"> Políticas de privacidade</a>
                     e os 
-                    <a href=""> Termos e condições do J7 e-shop</a>
+                    <a href="#"> Termos e condições do J7 e-shop</a>
                     e 
-                    <a href="">Mercado Pago j7.</a>
+                    <a href="#">Mercado Pago j7.</a>
                 </p>
             </div>
         </div>
@@ -97,6 +107,6 @@
     <script src="../js/jquery-3.4.1.min.js"></script>
     <script src="../js/popper.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/login-efect.js"></script>
+    <script src="../js/efect-field.js"></script>
 </body>
 </html>

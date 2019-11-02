@@ -1,3 +1,4 @@
+// EFEITO PLACEHOLDER - PÁGINA DE LOGIN
 $(document).ready(function(){
     $('.txtb input').on('focus',function(){
         $(this).addClass('focus')
@@ -10,12 +11,13 @@ $(document).ready(function(){
 })
 
 $(document).ready(function(){
-    $('.field__register input').on('focus',function(){
+    $('.r-info input').on('focus',function(){
         $(this).addClass('focus')
     })
     
-    $('.field__register input').on('blur',function(){
+    $('.r-info input').on('blur',function(){
         if($(this).val() == '')
         $(this).removeClass('focus')
     })
 })
+
