@@ -1,8 +1,5 @@
-#content .admin__describe .admin__price__product{
-    font-weight: bold;
-    color:rgb(6, 122, 113);
-    font-size:1rem;
-    display: block;
-    font-family: 'Lato', sans-serif;
-    margin:5px 0;
-}
+@import "../block/sidebar.css";
+@import "../block/item.css";
+@import "../block/";
+@import "../block/";
+@import "../block/";

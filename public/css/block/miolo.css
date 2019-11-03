@@ -31,7 +31,7 @@
     #header .h-search{
         position: absolute;
         top:20%;
-        left:10%;
+        left:12.56%;
         border-radius:20px;
         padding:0.8rem 0 0.8rem 3rem;
         width:30rem;
@@ -44,7 +44,7 @@
 
     #header .icon{
         position:absolute;
-        left:10.5%;
+        left:13.1%;
         top:27.6%;
         padding:0.3rem;
         width:auto;
@@ -127,12 +127,14 @@
 
 #header .navbar-brand{
     color:transparent;
-    background: url('../../img/logo-definitiva.png');
+    background: url('../../img/admin-eshop.png');
     background-repeat: no-repeat;
-    background-size:70px;
+    background-size: 140px;
     background-position:center;
     display:table;
     transition:.5s;
+    width: 150px;
+    /* border:1px solid red; */
     padding:0.7rem 0.7rem;
     line-height: 30px;
 }
