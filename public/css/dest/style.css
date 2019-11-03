@@ -5,3 +5,7 @@
 @import "../dest/fontawesome-free/css/all.min.css";
 @import "../dest/reset.css";
 
+html {
+    scroll-behavior: smooth;
+}
+

@@ -65,7 +65,7 @@
     position:absolute;
     display: block;
     width:0%;
-    height: 2px;
+    height: 3px;
     transition:.3s;
     background:linear-gradient(120deg, #12C9FF,#8380E8);
 }
@@ -117,4 +117,9 @@
 
 .statement p + p{
     margin:5px 0 0;
+}
+
+#footer{
+    height:auto;
+    margin-top:4rem;
 }
