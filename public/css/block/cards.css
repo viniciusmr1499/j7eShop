@@ -1,3 +1,5 @@
+@import "../modifier/card-images.css";
+
 @keyframes slow{
     0%{
         background-position:left;
@@ -6,6 +8,7 @@
         background-position:right;
     }
 }
+
 
 #main #cards-j7 {
     position:relative;
@@ -104,4 +107,114 @@
 #cards-j7  .describe-product .stars i{
     font-size:0.65rem;
     line-height:17px;
+}
+
+#my-cards{
+    position:relative;
+    margin-top:5rem;
+    margin-bottom:10rem;
+}
+
+#my-cards .product-card{
+    width:400px;
+    background:#ecedef;
+    padding:40px;
+    position: relative;
+    border-radius:10px;
+    background:#f9f9f9;
+    background-size:cover;
+
+    box-shadow:2px 0px 15px rgba(0,0,0,.4);
+    cursor: pointer;
+    transition: .5s;
+}
+
+
+#my-cards .product-card:hover{
+    box-shadow:15px 12px 40px rgba(0,0,0,.5);
+    cursor: pointer;
+    transition: .5s;
+}
+
+#my-cards .product-card h1{
+    font-size:2rem;
+    margin-bottom:4px;
+    color:#8244ad;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#my-cards .product-card  p{
+    font-size:.9rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin:.4rem 0;
+}
+
+#my-cards .product-card .product-images{
+    margin-bottom:20px;
+    display: flex;
+    width:100%;
+    justify-content: center;
+    margin-top:1rem;
+}
+
+#my-cards .product-card .product-images span{
+    width:50px;
+    height:50px;
+    margin:2rem 10px;
+    /* border-radius:50%; */
+    cursor:pointer;
+    position: relative;
+}
+
+#my-cards .product-images .start:after{
+    content: '';
+    width:110%;
+    border:1px solid #ccc;
+    box-shadow:2px 2px 14px rgba(0,0,0,.3);
+    position: absolute;
+    box-sizing: border-box;
+    bottom:0;
+    transition: .2s;
+}
+
+#my-cards .product-card .product__price{
+    color:#8244ad;
+    font-size:1.7rem;
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+#my-cards .product-card .product-info{
+    display: flex;
+    align-items: center;
+}
+
+#my-cards .product-card .product__button{
+    margin-left:auto;
+    text-decoration: none;
+    border:2px solid;
+    padding:11px 24px;
+    border-radius:20px;
+    transition:.3s linear;
+    background:linear-gradient(120deg, #3498db,#8244ad);
+    background-size:200%;
+    color:#fff;
+    outline:none;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#my-cards .product-card .product__button:hover{
+    transform:scale(1.01);
+    cursor: pointer;
+    background-position: right;
+}
+
+#my-cards .generic{
+    width:50px;
+    height:50px;
+    margin:2rem 10px;
+    cursor:pointer;
+    position: relative;
 }
