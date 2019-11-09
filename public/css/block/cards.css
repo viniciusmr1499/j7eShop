@@ -134,6 +134,7 @@
     box-shadow:15px 12px 40px rgba(0,0,0,.5);
     cursor: pointer;
     transition: .5s;
+    transform:translateY(-5%);
 }
 
 #my-cards .product-card h1{
