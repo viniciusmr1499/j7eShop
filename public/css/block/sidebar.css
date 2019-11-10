@@ -6,13 +6,13 @@ body {
     padding:.5rem 2.7rem;
     box-sizing:border-box;
     width:400px;
-    left:14.5rem;
+    left:9.5rem;
     right:0;  
 }
 
 #wrapper #page-content-wrapper #header .icon{
-    left:14.88rem;
-    top:1.15rem;
+    left:9.88rem;
+    top:1.215rem;
 }
 
 #wrapper #page-content-wrapper #header .navbar{
@@ -22,7 +22,7 @@ body {
 #wrapper #page-content-wrapper #header .h__text--admin{
     color:#fff;
     position:absolute;
-    left:8rem;
+    left:4rem;
     top:1.288rem;
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 700;

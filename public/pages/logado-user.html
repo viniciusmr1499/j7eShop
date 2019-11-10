@@ -8,12 +8,21 @@
     <link rel="stylesheet" href="../css/dest/bootstrap.min.css">
     <link rel="stylesheet" href="../css/dest/style.css">
     <title>Página Inicial- E-commerce</title>
+    <style>
+        #header .nav-item:nth-child(3):hover ~ .active{
+            transform:translateX(12.5rem) !important;
+        }
+
+        #header .nav-item:nth-child(4):hover ~ .active{
+            transform:translateX(19rem) !important;
+        }
+    </style>
 </head>
 <body>
 
     <header id="header">
         <nav class="navbar navbar-expand-lg navbar-light container-fluid">
-            <a href="index.html" class="navbar-brand">j7 eShop</a>
+            <a href="logado-user.html" class="navbar-brand">j7 eShop</a>
             
             <button class="navbar-toggler" data-toggle="collapse" data-target="#menu" aria-expanded="false" aria-controls="true">
                 <span class="navbar-toggler-icon"></span>
@@ -22,7 +31,14 @@
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a href="#header" class="nav-link"><i class="fas fa-home"></i> Inicio</a></li>
-                    <li class="nav-item"><a href="login.html" class="nav-link"><i class="fas fa-user"></i> login</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="login.html" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"><i class="fas fa-user"></i> User</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href=""><i class="fas fa-shopping-basket"></i> Compras</a>
+                            <a class="dropdown-item" href=""><i class="fas fa-address-book"></i> Meus dados</a>
+                            <a class="dropdown-item" href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                        </div>
+                    </li>
                     <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-shopping-cart"></i> Carrinho</a></li>
                     <li class="nav-item"><a href="#footer" class="nav-link"><i class="fas fa-mobile-alt"></i> Contato</a></li>
                     <div class="active"></div>
@@ -37,6 +53,167 @@
         </nav>
     </header>
 
+    <!-- aqui vai o conteudo main  -->
+    <main id="main">
+        <section id="cards-j7">
+            <div class="container-fluid">
+                <div class="row">
+                    
+                    <div class="col-md-4 col-sm-12 d-flex justify-content-center">
+                        <div class="block">
+                            <a href="produto.html" target="_blank">
+                                <img src="../img/produto3.png" alt="img" class="img-product">
+                            </a>
+                        </div>
+                    
+                        <div class="describe-product">
+                            <div class="d-especifications">
+                                <span class="desc">10%</span>
+                                <h2 class="title__product">Placa mãe Gigabyte</h2>
+                            </div>
+                            <p class="currency">R$255,90</p>
+                            <div class="stars">
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="far fa-star"></i></span>
+                                <span><i class="far fa-star"></i></span>
+                            </div> 
+                        </div>
+    
+                    </div>
+        
+                    <div class="col-md-4 col-sm-12 d-flex justify-content-center">
+                        <div class="block">
+                            <a target="_blank" href="produto.html">
+                                <img src="../img/produto1.png" alt="img" class="img-product">
+                            </a>
+                        </div>
+                    
+                        <div class="describe-product">
+                            <div class="d-especifications">
+                                <span class="desc">50%</span>
+                                <h2 class="title__product">PC Gamer - Extreme</h2>
+                            </div>
+                            <p class="currency">R$1800,00</p>
+                            <div class="stars">
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                            </div>
+                                    
+                        </div>
+                    </div>
+        
+                    <div class="col-md-4 col-sm-12 d-flex justify-content-center">
+                        <div class="block">
+                            <a href="produto.html" target="_blank">
+                                <img src="../img/produto2.png" alt="img" class="img-product">
+                            </a>
+                        </div>
+                    
+                        <div class="describe-product">
+                            <span class="desc">
+                                <i class="fas fa-cart-plus"></i>
+                            </span>
+                            
+                            <div class="d-especifications">
+                                <h2 class="title__product">Monitor DELL 20'p</h2>
+                            </div>
+                            <p class="currency">R$500,00</p>
+
+                            <div class="stars">
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="far fa-star"></i></span>
+                            </div>
+                                    
+                        </div>
+                    </div>
+    
+                    <!-- fim da linha -->
+                </div>
+            </div>
+        </section>
+
+        <section id="my-cards" class="container-fluid">
+            <div class="row d-flex">
+               
+               
+                <div class="col-md-4 mt-3">
+                    <div class="product-card" id="item-1">
+                        <h1>Placa mãe N7 Z390</h1>
+                        <p>Ótima para games e alta performance</p>
+                        <img id="image-1" src="../img/Placa-mãe-N7-Z390/0.png" height="300px" width="100%" alt="">
+                        
+                        <div class="product-images">
+                            <img src="../img/Placa-mãe-N7-Z390/0.png"  alt="">
+                            <img src="../img/Placa-mãe-N7-Z390/1.png"  alt="">
+                            <img src="../img/Placa-mãe-N7-Z390/2.png"  alt="">
+                            <img src="../img/Placa-mãe-N7-Z390/3.png"  alt="">
+                            <div class="start"></div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product__price">R$ 200,00</div>
+                            <button type="button" action="produto.html" class="product__button">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-3">
+                    <div class="product-card" id="item-2">
+                        <h1>Placa mãe N7 Z390</h1>
+                        <p>Ótima para games e alta performance</p>
+                        <!-- <div class="product-pic"></div> -->
+                        <img id="image-2" src="../img/Gabinete-Gamer-Nzxt-S340-Branco-White/0.png" height="300px" width="100%" alt="">
+                        
+                        <div class="product-images">
+                            <img src="../img/Gabinete-Gamer-Nzxt-S340-Branco-White/0.png"  alt="">
+                            <img src="../img/Gabinete-Gamer-Nzxt-S340-Branco-White/1.png"  alt="">
+                            <img src="../img/Gabinete-Gamer-Nzxt-S340-Branco-White/2.png"  alt="">
+                            <img src="../img/Gabinete-Gamer-Nzxt-S340-Branco-White/3.png" alt="">
+                            <div class="start"></div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product__price">R$ 200,00</div>
+                            <button type="button" action="produto.html" class="product__button">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-3">
+                    <div class="product-card" id="item-3">
+                        <h1>Placa mãe N7 Z390</h1>
+                        <p>Ótima para games e alta performance</p>
+                        
+                        <img id="image-3" src="../img/Gabinete-Gamer-Nzxt-S340-Branco-White/0.png" height="300px" width="100%" alt="">
+                        
+                        <div class="product-images">
+                            <img src="../img/Placa-mãe-N7-Z390/0.png" data-pic="url(../img/Placa-mãe-N7-Z390/0.png)" alt="">
+                            <img src="../img/Placa-mãe-N7-Z390/1.png" data-pic="url(../img/Placa-mãe-N7-Z390/1.png)" alt="">
+                            <img src="../img/Placa-mãe-N7-Z390/2.png" data-pic="url(../img/Placa-mãe-N7-Z390/2.png)" alt="">
+                            <img src="../img/Placa-mãe-N7-Z390/3.png" data-pic="url(../img/Placa-mãe-N7-Z390/3.png)"alt="">
+                            <div class="start"></div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product__price">R$ 599,00</div>
+                            <button type="button" action="produto.html" class="product__button">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer id="footer">
         <div class="container-fluid">
