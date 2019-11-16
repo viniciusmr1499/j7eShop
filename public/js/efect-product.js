@@ -9,3 +9,7 @@ $('#product .two').on('click',function(){
 $('#product .three').on('click',function(){ 
     $('.p-img-father').css({'background-image':$(this).attr('data-pic')})
 })
+
+$('#product .for').on('click',function(){ 
+    $('.p-img-father').css({'background-image':$(this).attr('data-pic')})
+})
